@@ -1,0 +1,14 @@
+const path = require('path');
+
+require('dotenv').config();
+
+module.exports = {
+  config: path.resolve('src/externo/postgresDB/config/database.js'),
+  'models-path': path.resolve('src/externo/postgresDB/models'),
+  'seeders-path': path.resolve(
+    'src/externo/postgresDB/seeders/dbIncidenciasOlap'
+  ),
+  'migrations-path': path.resolve(
+    'src/externo/postgresDB/migrations/dbIncidenciasOlap'
+  ),
+};

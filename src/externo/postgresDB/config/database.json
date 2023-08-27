@@ -1,0 +1,59 @@
+{
+  "development": {
+    "incidenciasOltp": {
+      "username": "postgres",
+      "password": "Passw0rd",
+      "database": "incidents",
+      "host": "localhost",
+      "dialect": "postgres",
+      "port": 5432
+    },
+    "incidenciasOlap": {
+      "username": "postgres",
+      "password": "Passw0rd",
+      "database": "dw_incidencias",
+      "host": "localhost",
+      "dialect": "postgres",
+      "port": 5432
+    }
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "incidenciasOltp": {
+      "username": "postgres",
+      "password": "tUi4WeLkiaPiTpyZloKS",
+      "database": "railway",
+      "host": "containers-us-west-11.railway.app",
+      "dialect": "postgres",
+      "port": 5992
+    },
+    "incidenciasOlap": {
+      "username": "postgres",
+      "password": "DrcOrdmsNga09OHJyfkC",
+      "database": "railway",
+      "host": "containers-us-west-65.railway.app",
+      "dialect": "postgres",
+      "port": 6222
+    }
+  },
+  "incidenciasOltp": {
+    "username": "postgres",
+    "password": "Passw0rd",
+    "database": "incidents",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "incidenciasOlap": {
+    "username": "postgres",
+    "password": "Passw0rd",
+    "database": "dw_incidencias",
+    "host": "localhost",
+    "dialect": "postgres"
+  }
+}

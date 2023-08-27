@@ -1,0 +1,65 @@
+module.exports = {
+  development: {
+    incidenciasOltp: {
+      username: process.env.PGUSER_OLTP,
+      password: process.env.PGPASSWORD_OLTP,
+      database: process.env.PGDATABASE_OLTP,
+      host: process.env.PGHOST_OLTP,
+      port: process.env.PGPORT_OLTP,
+      dialect: 'postgres',
+    },
+    incidenciasOlap: {
+      username: process.env.PGUSER_OLAP,
+      password: process.env.PGPASSWORD_OLAP,
+      database: process.env.PGDATABASE_OLAP,
+      host: process.env.PGHOST_OLAP,
+      port: process.env.PGPORT_OLAP,
+      dialect: 'postgres',
+    },
+  },
+  test: {
+    username: process.env.CI_DB_USERNAME,
+    password: process.env.CI_DB_PASSWORD,
+    database: process.env.CI_DB_NAME,
+    host: '127.0.0.1',
+    port: 3306,
+    dialect: 'mysql',
+    dialectOptions: {
+      bigNumberStrings: true,
+    },
+  },
+  production: {
+    incidenciasOltp: {
+      username: process.env.PGUSER_OLTP,
+      password: process.env.PGPASSWORD_OLTP,
+      database: process.env.PGDATABASE_OLTP,
+      host: process.env.PGHOST_OLTP,
+      port: process.env.PGPORT_OLTP,
+      dialect: 'postgres',
+    },
+    incidenciasOlap: {
+      username: process.env.PGUSER_OLAP,
+      password: process.env.PGPASSWORD_OLAP,
+      database: process.env.PGDATABASE_OLAP,
+      host: process.env.PGHOST_OLAP,
+      port: process.env.PGPORT_OLAP,
+      dialect: 'postgres',
+    },
+  },
+  incidenciasOltp: {
+    username: process.env.PGUSER_OLTP,
+    password: process.env.PGPASSWORD_OLTP,
+    database: process.env.PGDATABASE_OLTP,
+    host: process.env.PGHOST_OLTP,
+    port: process.env.PGPORT_OLTP,
+    dialect: 'postgres',
+  },
+  incidenciasOlap: {
+    username: process.env.PGUSER_OLAP,
+    password: process.env.PGPASSWORD_OLAP,
+    database: process.env.PGDATABASE_OLAP,
+    host: process.env.PGHOST_OLAP,
+    port: process.env.PGPORT_OLAP,
+    dialect: 'postgres',
+  },
+};
